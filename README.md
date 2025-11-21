@@ -37,31 +37,32 @@ Não vamos instalar nada! Vamos usar um computador na nuvem.
 3.  Clique no botão verde **Create codespace on main**.
 4.  Aguarde o ambiente carregar no seu navegador.
 
-### 3. Branch  🌿
+### 3. Branch (Ramo) 🌿
 
 Nunca trabalhe diretamente na `main`! Vamos criar uma branch separada para a sua contribuição.
 
 No terminal do Codespaces (parte inferior da tela), digite:
 
 ```bash
-git checkout -b recado-SEUNOME
+git checkout -b gambiarra-SEUNOME
 ```
 
 *(Troque `SEUNOME` pelo seu nome ou apelido)*
 
 ### 4. Hora do Código com Copilot 🤖
 
-Agora vem a parte divertida! Vamos adicionar seu recado.
+Agora vem a parte divertida! Vamos adicionar sua gambiarra.
 
 1.  No explorador de arquivos à esquerda, navegue até a pasta `data` e abra o arquivo `messages.json`.
 2.  Role até o final do arquivo (dentro dos colchetes `[]`).
-3.  **Use o Copilot!**
-    *   Posicione o cursor após o último recado (não esqueça da vírgula no item anterior!).
-    *   Comece a digitar um comentário para invocar o Copilot ou use o Chat (`Ctrl+I` ou `Cmd+I`):
+3.  **Use o Copilot Chat!**
+    *   Posicione o cursor após o último item (não esqueça da vírgula no item anterior!).
+    *   Abra o **Copilot Chat** na barra lateral esquerda (ícone do balão de fala).
+    *   Peça para ele gerar o JSON para você. Exemplo de prompt:
 
-    > "Adicione um novo objeto JSON com meu nome [Seu Nome], uma mensagem de boas vindas e a data de hoje."
+    > "Gere um objeto JSON para adicionar neste arquivo com meu nome [Seu Nome], uma mensagem contando minha melhor gambiarra técnica e a data de hoje. Siga o padrão dos itens anteriores."
 
-    *   Pressione `Tab` para aceitar a sugestão.
+    *   Copie o código gerado e cole no arquivo `messages.json`.
 
 ### 5. Testando no Navegador 🧪
 
@@ -73,7 +74,7 @@ Antes de enviar, veja se funcionou!
     ```
 2.  O Codespaces mostrará um aviso no canto inferior direito: "Your application is running on port 8000".
 3.  Clique em **Open in Browser**.
-4.  Veja seu recado no mural! 🎉
+4.  Veja sua gambiarra no mural! 🎉
 5.  Para parar o servidor, clique no terminal e pressione `Ctrl+C`.
 
 ### 6. Commit e Push upload 📤
@@ -82,8 +83,8 @@ Salvando e enviando para o GitHub.
 
 ```bash
 git add data/messages.json
-git commit -m "Adiciona recado de [Seu Nome]"
-git push origin recado-SEUNOME
+git commit -m "Adiciona gambiarra de [Seu Nome]"
+git push origin gambiarra-SEUNOME
 ```
 
 ### 7. Pull Request (PR) 🔀
