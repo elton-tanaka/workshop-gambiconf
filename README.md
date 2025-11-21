@@ -1,8 +1,8 @@
-# 🎓 Workshop: Contribuindo com Open Source usando GitHub Copilot @GambiConf
+# 🎓 Workshop: Contribuindo com Open Source usando GitHub Copilot @ GambiConf
 
-Boas vindas! Este repositório foi criado especialmente para o nosso workshop na **GambiConf**. Aqui, vamos aprender na prática como contribuir para um projeto Open Source, utilizando a inteligência artificial do **GitHub Copilot** para nos ajudar.
+Bem-vindo(a)! Este repositório foi criado especialmente para o nosso workshop na **GambiConf**. Aqui, vamos aprender na prática como contribuir para um projeto Open Source, utilizando a inteligência artificial do **GitHub Copilot** para nos ajudar.
 
-O projeto é um **Mural de Recados**. 
+O projeto é um **Mural de Gambiarras**. Ao final, a sua dica de gambiarra estará publicada junto com a de todos os outros participantes!
 
 ---
 
