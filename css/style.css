@@ -1,0 +1,115 @@
+:root {
+    --primary-color: #6e5494;
+    --bg-color: #f6f8fa;
+    --card-bg: #ffffff;
+    --text-color: #24292e;
+    --accent-color: #2dba4e;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-family: 'Kalam', cursive;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.messages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    padding-bottom: 40px;
+}
+
+.message-card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-top: 5px solid var(--accent-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.message-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.message-content {
+    font-family: 'Kalam', cursive;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    color: #333;
+}
+
+.message-author {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message-date {
+    font-weight: 400;
+    color: #666;
+    font-size: 0.8rem;
+}
+
+.loading {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #666;
+    padding: 40px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    margin-top: auto;
+}
+
+/* Cores aleatórias para a borda superior dos cards (será aplicado via JS ou classes auxiliares se quisermos) */
+.card-color-1 { border-top-color: #ff7b72; }
+.card-color-2 { border-top-color: #d2a8ff; }
+.card-color-3 { border-top-color: #79c0ff; }
+.card-color-4 { border-top-color: #ffa657; }
