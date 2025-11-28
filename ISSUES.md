@@ -1,6 +1,10 @@
-# 🎯 Missões Extra - Para os Apressadinhas
+# 🎯 Issues - Fase 2 do Workshop
 
-Terminou rápido? Aqui estão algumas ideias de features para você implementar e contribuir! Use o GitHub Copilot para te ajudar. 🚀
+Estas são as **issues oficiais da Fase 2** do workshop! Escolha uma, implemente a solução e abra um Pull Request.
+
+**Importante:** Antes de começar, comente na issue dizendo que você vai trabalhar nela para evitar trabalho duplicado! 💬
+
+Use o GitHub Copilot para te ajudar em cada etapa! 🚀
 
 ---
 
@@ -185,16 +189,206 @@ Adicione animações quando os cards aparecem na tela pela primeira vez.
 
 ---
 
-## 🎯 Como Contribuir com Essas Issues
+## 🎯 Como Contribuir
 
-1. Escolha uma issue que te interessa
-2. Crie uma branch: `git checkout -b feature/nome-da-feature`
-3. Use o Copilot Chat para te ajudar: `@workspace [sua pergunta]`
-4. Teste suas mudanças localmente
-5. Faça commit e push
-6. Abra um Pull Request mencionando a issue
+1. **Escolha uma issue** que te interessa (veja a lista acima)
+2. **Comente na issue** no GitHub dizendo que vai trabalhar nela
+3. **Crie uma branch:** `git checkout -b feature/nome-da-feature`
+4. **Use o Copilot Chat** para te ajudar: `@workspace [sua pergunta]`
+5. **Teste suas mudanças** localmente
+6. **Faça commit e push**
+7. **Abra um Pull Request** mencionando o número da issue (ex: "Closes #1")
 
-**Dica de Ouro:** Não tenha medo de experimentar! O Copilot está aqui para te ajudar. 🚀
+---
+
+## 📊 Status das Issues
+
+Confira a aba **Issues** no GitHub para ver quais já foram resolvidas e quais ainda estão disponíveis!
+
+---
+
+**Dica de Ouro:** Não tenha medo de experimentar! O Copilot está aqui para te ajudar. Se tiver dúvidas, pergunte aos instrutores! 🚀
+
+---
+
+## 🎵 Issue #11: Tocar Som ao Adicionar Gambiarra
+
+**Dificuldade:** ⭐ Fácil
+
+**Descrição:**
+Adicione um efeito sonoro divertido quando uma nova gambiarra for adicionada ao mural (ao recarregar a página e detectar novos itens).
+
+**Dicas:**
+- Use a Web Audio API ou um elemento `<audio>`
+- Pode usar sons gratuitos de sites como freesound.org
+- Detecte quando há mais gambiarras do que na última visita (use `localStorage`)
+- Adicione um botão para ligar/desligar o som
+
+**Pergunte ao Copilot:**
+> "@workspace Como adicionar um efeito sonoro quando novas gambiarras aparecem?"
+
+---
+
+## 🎨 Issue #12: Tema de Alto Contraste
+
+**Dificuldade:** ⭐⭐ Intermediário
+
+**Descrição:**
+Adicione um terceiro tema com alto contraste para melhorar a acessibilidade.
+
+**Dicas:**
+- Crie uma opção além de claro/escuro
+- Use cores com contraste WCAG AAA (preto/branco, amarelo forte/preto)
+- Adicione ícones maiores e fontes mais legíveis
+- Teste com ferramentas de acessibilidade do navegador
+
+**Pergunte ao Copilot:**
+> "@workspace Como implementar um tema de alto contraste acessível?"
+
+---
+
+## 📋 Issue #13: Copiar Gambiarra para Clipboard
+
+**Dificuldade:** ⭐ Fácil
+
+**Descrição:**
+Adicione um botão em cada card para copiar o texto da gambiarra para a área de transferência.
+
+**Dicas:**
+- Use a Clipboard API: `navigator.clipboard.writeText()`
+- Adicione um ícone de copiar (📋 ou 📄)
+- Mostre feedback visual quando copiar (tooltip "Copiado!")
+- Trate erros de permissão
+
+**Pergunte ao Copilot:**
+> "@workspace Como adicionar um botão para copiar o texto da gambiarra?"
+
+---
+
+## 🌍 Issue #14: Contador de Visitantes
+
+**Dificuldade:** ⭐⭐ Intermediário
+
+**Descrição:**
+Adicione um contador simples mostrando quantas vezes a página foi visitada (usando localStorage).
+
+**Dicas:**
+- Use `localStorage` para armazenar o contador
+- Incremente a cada visita
+- Mostre o número no footer ou header
+- Adicione um easter egg quando atingir números especiais (100, 500, 1000)
+
+**Pergunte ao Copilot:**
+> "@workspace Como criar um contador de visitas usando localStorage?"
+
+---
+
+## 🎪 Issue #15: Modo Confete/Celebração
+
+**Dificuldade:** ⭐⭐⭐ Avançado
+
+**Descrição:**
+Adicione um efeito de confete/celebração quando clicar em um botão especial ou atingir um marco.
+
+**Dicas:**
+- Use canvas API ou uma biblioteca leve como canvas-confetti
+- Adicione um botão "Celebrar" no header
+- Anime partículas coloridas caindo pela tela
+- Considere adicionar sons de celebração também
+
+**Pergunte ao Copilot:**
+> "@workspace Como criar um efeito de confete usando canvas ou bibliotecas?"
+
+---
+
+## 📱 Issue #16: QR Code para Compartilhar
+
+**Dificuldade:** ⭐⭐ Intermediário
+
+**Descrição:**
+Gere um QR code para cada gambiarra que pode ser escaneado para compartilhar.
+
+**Dicas:**
+- Use uma biblioteca como qrcode.js ou uma API pública
+- Adicione um botão "QR Code" em cada card
+- Mostre o QR em um modal/popup
+- O QR pode apontar para o site com um filtro/hash específico
+
+**Pergunte ao Copilot:**
+> "@workspace Como gerar QR codes para compartilhar gambiarras específicas?"
+
+---
+
+## 🎲 Issue #17: Gambiarra do Dia
+
+**Dificuldade:** ⭐⭐ Intermediário
+
+**Descrição:**
+Destaque uma "Gambiarra do Dia" que muda diariamente (usando a data como seed).
+
+**Dicas:**
+- Use a data atual para gerar um índice "aleatório" mas consistente
+- Crie uma seção especial destacada no topo
+- Adicione um badge "⭐ Gambiarra do Dia"
+- Use animações para chamar atenção
+
+**Pergunte ao Copilot:**
+> "@workspace Como selecionar uma gambiarra do dia usando a data como seed?"
+
+---
+
+## 🖼️ Issue #18: Avatares Personalizados
+
+**Dificuldade:** ⭐⭐ Intermediário
+
+**Descrição:**
+Adicione avatares gerados automaticamente para cada contribuidor (usando serviços como DiceBear ou Boring Avatars).
+
+**Dicas:**
+- Use uma API de avatares aleatórios baseada no nome
+- Exiba o avatar no canto do card
+- Tente APIs como: `https://api.dicebear.com/7.x/avataaars/svg?seed=NOME`
+- Cache os avatares no localStorage
+
+**Pergunte ao Copilot:**
+> "@workspace Como adicionar avatares gerados automaticamente para cada contribuidor?"
+
+---
+
+## 🏆 Issue #19: Sistema de Badges/Conquistas
+
+**Dificuldade:** ⭐⭐⭐ Avançado
+
+**Descrição:**
+Crie badges especiais para contribuidores (ex: "Primeira Gambiarra", "5 Gambiarras", "Gambiarra Mais Curtida").
+
+**Dicas:**
+- Defina diferentes tipos de badges e critérios
+- Mostre os badges no card do usuário
+- Use ícones ou emojis para os badges: 🥇🥈🥉⭐🏆🎯
+- Salve no localStorage ou calcule dinamicamente
+- Crie uma página/modal de "Hall da Fama"
+
+**Pergunte ao Copilot:**
+> "@workspace Como implementar um sistema de badges para os contribuidores?"
+
+---
+
+## 📊 Issue #20: Gráfico de Contribuições ao Longo do Tempo
+
+**Dificuldade:** ⭐⭐⭐ Avançado
+
+**Descrição:**
+Crie um gráfico mostrando o número de gambiarras adicionadas por data.
+
+**Dicas:**
+- Use uma biblioteca de gráficos leve como Chart.js
+- Agrupe as gambiarras por data
+- Crie um gráfico de barras ou linha
+- Adicione em uma seção de estatísticas expandível
+
+**Pergunte ao Copilot:**
+> "@workspace Como criar um gráfico de contribuições ao longo do tempo usando Chart.js?"
 
 ---
 

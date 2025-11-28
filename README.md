@@ -2,7 +2,12 @@
 
 Bem-vindo(a)! Este repositório foi criado especialmente para o nosso workshop na **GambiConf**. Aqui, vamos aprender na prática como contribuir para um projeto Open Source, utilizando a inteligência artificial do **GitHub Copilot** para nos ajudar.
 
-O projeto é um **Mural de Gambiarras**. Ao final, a sua dica de gambiarra estará publicada junto com a de todos os outros participantes!
+O projeto é um **Mural de Gambiarras**. O workshop está dividido em **duas fases**:
+
+- **Fase 1:** Adicione sua gambiarra ao mural
+- **Fase 2:** Resolva uma issue do repositório e contribua com novas funcionalidades
+
+Ao final, você terá feito duas contribuições reais para um projeto Open Source! 🎉
 
 ---
 
@@ -17,7 +22,7 @@ Para participar deste workshop, você só precisa de:
 
 ---
 
-## 🚀 Passo a Passo: Sua Primeira Contribuição
+## 🎯 Fase 1: Sua Primeira Contribuição - Adicione sua Gambiarra
 
 Siga este guia detalhado. Se tiver dúvidas, levante a mão! 🙋‍♂️🙋‍♀️
 
@@ -131,5 +136,60 @@ Se algo der errado:
 1.  Verifique se você colocou a **vírgula** `,` depois do objeto anterior no JSON.
 2.  Confira se fechou as chaves `{}` e colchetes `[]` corretamente.
 3.  Chame um dos instrutores!
+
+---
+
+## 🎯 Fase 2: Resolva uma Issue e Contribua com uma Feature
+
+Agora que você já sabe como contribuir, é hora de resolver um problema real! 🛠️
+
+### Como Participar da Fase 2:
+
+1.  **Escolha uma Issue:**
+    *   Vá para o arquivo [`ISSUES.md`](ISSUES.md) ou acesse a aba **Issues** no GitHub
+    *   Escolha uma issue que te interesse (recomendamos começar pelas mais fáceis ⭐)
+    *   Deixe um comentário dizendo que vai trabalhar nela para evitar duplicação!
+
+2.  **Crie uma Nova Branch:**
+    ```bash
+    git checkout main
+    git pull origin main
+    git checkout -b feature/nome-da-feature
+    ```
+
+3.  **Use o Copilot para Ajudar:**
+    *   Pergunte ao Copilot sobre a issue escolhida
+    *   Exemplo: `@workspace Como implementar um dark mode toggle neste projeto?`
+    *   Deixe o Copilot te guiar na implementação!
+
+4.  **Teste Suas Mudanças:**
+    ```bash
+    python3 -m http.server
+    ```
+    *   Abra no navegador e teste se funciona corretamente
+
+5.  **Commit e Push:**
+    ```bash
+    git add .
+    git commit -m "Implementa [nome da feature] - closes #número-da-issue"
+    git push origin feature/nome-da-feature
+    ```
+
+6.  **Abra o Pull Request:**
+    *   Na descrição, mencione qual issue você está resolvendo
+    *   Exemplo: "Closes #1" ou "Resolve #3"
+    *   Explique o que foi implementado e como testar
+
+---
+
+## 🌟 Dicas para a Fase 2
+
+- **Comunique-se:** Se tiver dúvidas sobre uma issue, pergunte!
+- **Comece simples:** Escolha issues marcadas como ⭐ (Fácil) primeiro
+- **Use o Copilot:** Ele pode explicar o código existente e sugerir implementações
+- **Teste bem:** Garanta que sua feature funciona antes de abrir o PR
+- **Peça review:** Não tenha vergonha de pedir feedback!
+
+---
 
 **Bom workshop!** 🚀
