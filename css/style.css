@@ -373,3 +373,22 @@ body.dark-mode .stat-snippet {
 .card-color-2 { border-top-color: #d2a8ff; }
 .card-color-3 { border-top-color: #79c0ff; }
 .card-color-4 { border-top-color: #ffa657; }
+
+/* ===== GIF Overlay ===== */
+.gif-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    pointer-events: none; /* não bloqueia interação com a página */
+}
+
+.gif-item {
+    position: absolute;
+    image-rendering: auto;
+    filter: drop-shadow(0 6px 10px rgba(0,0,0,0.25));
+    transition: transform 0.3s ease;
+}
+
+.gif-item:hover {
+    transform: scale(1.05);
+}
